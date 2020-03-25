@@ -19,15 +19,15 @@
         <div class="collapse navbar-collapse" id="navbar-supported-content">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item active" id="units-tab">
-              <a class="nav-link" href="#">Units
+              <a class="nav-link" href="units.html">Units
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item" id="explore-tab">
-              <a class="nav-link" href="#">Explore</a>
+              <a class="nav-link" href="explore.html">Explore</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -62,7 +62,10 @@
       <div class="card-body">
         <p>A river valley civilization is an agricultural nation or civilization situated beside and drawing sustenance from a river. A "civilization" means a society with large permanent settlements featuring urban development, social satisfaction, specialization of labor, centralized organization, and written or other formal means of communication. A river gives the inhabitants a reliable source of water for drinking and agriculture. Additional benefits include fishing, fertile soil due to annual flooding, and ease of transportation. The first great civilizations, such as those in Mesopotamia and Egypt, all grew up in river valleys.</p>
       </div>
-      <div id="rvMap"></div>
+      <div class="floating-panel">
+        <input type="button" value="Toggle visibility" class"toggle-visibility"></input>
+      </div>
+      <div id="rvMap" class="map"></div>
     </div>
 
     <!-- Unit 2 Tab -->
@@ -79,7 +82,7 @@
       <div class="card-body">
         <p>Classical civilizations in Eurasia employed a variety of methods to expand and maintain control over vast territories. They developed lasting cultural achievements. Both internal and external forces led to the eventual decline of these empires.</p>
       </div>
-      <div id="classicalMap"></div>
+      <div id="classicalMap" class="map"></div>
     </div>
 
     <!-- Unit 3 Tab -->
@@ -100,9 +103,10 @@
 
         <p>The Inca began settling in the Valley of Cuzco in the Andes Mountains of central Peru around the year 1200. Between 1440 and 1500, they expanded their empire until it extended nearly 2,500 miles from north to south and included as many as 16 million people. The lands they occupied included mountains, coastal desert, and low-lying jungle.</p>
 
-        <p>The center of the Aztec civilization was in the Valley of Mexico, a huge high-elevation basin in the Sierra Madre Mountains. This valley had a mild climate that was good for agriculture. The surrounding lowlands offered a hotter, wetter tropical climate and an abundance of natural resources.<p/>
+        <p>The center of the Aztec civilization was in the Valley of Mexico, a huge high-elevation basin in the Sierra Madre Mountains. This valley had a mild climate that was good for agriculture. The surrounding lowlands offered a hotter, wetter tropical climate and an abundance of natural resources.</p>
       </div>
-      <div id="americasMap"></div>
+      <div id="americasMap" class="map"></div>
+
     </div>
 
     <!-- Unit 4 Tab -->
@@ -121,7 +125,7 @@
 
         <p>In Asia, the spread of Islam created a new empire and Islamic Golden Age with trade among the Asian, African and European continents, and advances in science in the medieval Islamic world. East Asia experienced the full establishment of power of Imperial China. Religions such as Buddhism and Neo-Confucianism spread in the region. Gunpowder was developed in China during the post-classical era. The Mongol Empire connected Europe and Asia, creating safe trade and stability between the two regions. In total the population of the world doubled in the time period from approximately 210 million in 500 CE to 461 million in 1500.</p>
       </div>
-      <div id="pcMap"></div>
+      <div id="pcMap" class="map"></div>
     </div>
 
     <!-- Unit 5 Tab -->
@@ -138,7 +142,7 @@
       <div class="card-body">
         <p>In the history of Europe, the Middle Ages (or medieval period) lasted from the 5th to the 15th century. It began with the fall of the Western Roman Empire and merged into the Renaissance and the Age of Discovery.</p>
       </div>
-      <div id="medievalMap"></div>
+      <div id="medievalMap" class="map"></div>
     </div>
 
     <!-- Unit 6 Tab -->
@@ -153,14 +157,17 @@
     </div>
     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#headingSix">
       <div class="card-body">
+        <h2><em>Renaissance</em></h2>
         <p>The Renaissance was a period in European history marking the transition from the Middle Ages to Modernity and covering the 15th and 16th centuries. The traditional view focuses more on the early modern aspects of the Renaissance and argues that it was a break from the past, but many historians today focus more on its medieval aspects and argue that it was an extension of the Middle Ages.</p>
-        <div id="renMap"></div>
+        <div id="renMap" class="map"></div>
 
+        <h2><em>Reformation</em></h2>
         <p>The Reformation (alternatively named the Protestant Reformation or the European Reformation) was a movement within Western Christianity in 16th-century Europe that posed a religious and political challenge to the Roman Catholic Church and papal authority in particular. Although the Reformation is usually considered to have started with the publication of the Ninety-five Theses by Martin Luther in 1517, there was no schism between the Catholic Church and the nascent Luther until the 1521 Edict of Worms. The edict condemned Luther and officially banned citizens of the Holy Roman Empire from defending or propagating his ideas.</p>
-        <div id="refMap"></div>
+        <div id="refMap" class="map"></div>
 
-        <p>The Age of Discovery, or the Age of Exploration, is an informal and loosely defined term for the period in European history in which extensive overseas exploration emerged as a powerful factor in European culture and which was the beginning of globalization. It also marks the rise of the widespread adoption of colonialism and mercantilism as national policies in Europe. Many lands previously unknown to Europeans were discovered by them during this period, though most were already inhabited. From the perspective of many non-Europeans, the Age of Discovery marked the arrival of invaders from previously unknown continents.</p>
-        <div id="expMap"></div>
+        <h2><em>Age of Exploration</em></h2>
+        <p>The Age of Exploration, is an informal and loosely defined term for the period in European history in which extensive overseas exploration emerged as a powerful factor in European culture and which was the beginning of globalization. It also marks the rise of the widespread adoption of colonialism and mercantilism as national policies in Europe. Many lands previously unknown to Europeans were discovered by them during this period, though most were already inhabited. From the perspective of many non-Europeans, the Age of Discovery marked the arrival of invaders from previously unknown continents.</p>
+        <div id="expMap" class="map"></div>
       </div>
 
     </div>
