@@ -323,9 +323,294 @@ function initMaps() {
 		title: indusHeading
 	});
 
-	//adds a click event to the nile river valley info window, FAILED W/ JQUERY
+	//adds a click event to the indus river valley info window, FAILED W/ JQUERY
 	indusMarker.addListener('click', function() {
 		indusInfoWindow.open(rvMap, indusMarker);
+	});
+
+	//-----CLASSICAL CHINA INFO WINDOW-----
+
+	// creates a variable for classical china info window, where I want it on the map
+	const classicalChina = { lat: 33, lng: 108 };
+	//creates content for the info window
+	const classicalChinaHeading = 'Classical China';
+	//MAYBE FIND AN EASIER WAY TO PUT IN CONTENT?
+	const classicalChinaContent =
+		'laid the foundations for arguably the single most important civilization in the history of the planet. Any stereotypical ideas you have about the way China is from borders, language, writing, technology, empires, rulers, etc. come from this era. From the point where the region was first unified under the legalist Qin Shi Huangdi to the fall of the Han empire, what we know as China today took shape.';
+	const classicalChinaContentString = `
+    <div id="content">
+      <div id="siteNotice">
+      </div>
+      <h1 id="firstHeading" class="firstHeading">${classicalChinaHeading}</h1>
+      <div id="bodyContent">
+        <p><b>${classicalChinaHeading} </b>${classicalChinaContent} </p>
+      </div>
+    </div>
+      `;
+	//creates an infowindow object for text of classical china
+	const classicalChinaInfoWindow = new google.maps.InfoWindow({
+		content: classicalChinaContentString
+	});
+
+	//creates a marker object for classical china
+	const classicalChinaMarker = new google.maps.Marker({
+		position: classicalChina,
+		map: classicalMap,
+		title: classicalChinaHeading
+	});
+
+	//adds a click event to classical china info window, FAILED W/ JQUERY
+	classicalChinaMarker.addListener('click', function() {
+		classicalChinaInfoWindow.open(classicalMap, classicalChinaMarker);
+	});
+
+	//-----CLASSICAL INDIA INFO WINDOW-----
+
+	// creates a variable for classical india info window, where I want it on the map
+	const classicalIndia = { lat: 25, lng: 75 };
+	//creates content for the info window
+	const classicalIndiaHeading = 'Classical India';
+	//MAYBE FIND AN EASIER WAY TO PUT IN CONTENT?
+	const classicalIndiaContent =
+		"included both the Mauryan, and later Guptan Empire, which laid the foundation for what is quickly becoming the largest civilization on the planet today. When looking at Classical India, focus more on the social and religious; both of which were tied directly to the world's oldest religion: Hinduism.";
+	const classicalIndiaContentString = `
+    <div id="content">
+      <div id="siteNotice">
+      </div>
+      <h1 id="firstHeading" class="firstHeading">${classicalIndiaHeading}</h1>
+      <div id="bodyContent">
+        <p><b>${classicalIndiaHeading} </b>${classicalIndiaContent} </p>
+      </div>
+    </div>
+      `;
+	//creates an infowindow object for text of classical india
+	const classicalIndiaInfoWindow = new google.maps.InfoWindow({
+		content: classicalIndiaContentString
+	});
+
+	//creates a marker object for classical india
+	const classicalIndiaMarker = new google.maps.Marker({
+		position: classicalIndia,
+		map: classicalMap,
+		title: classicalIndiaHeading
+	});
+
+	//adds a click event to the classical india info window, FAILED W/ JQUERY
+	classicalIndiaMarker.addListener('click', function() {
+		classicalIndiaInfoWindow.open(classicalMap, classicalIndiaMarker);
+	});
+
+	//-----CLASSICAL GREECE INFO WINDOW-----
+
+	// creates a variable for classical greece info window, where I want it on the map
+	const classicalGreece = { lat: 40, lng: 21.5 };
+	//creates content for the info window
+	const classicalGreeceHeading = 'Classical Greece';
+	//MAYBE FIND AN EASIER WAY TO PUT IN CONTENT?
+	const classicalGreeceContent =
+		'had a powerful influence on the Roman Empire and on the foundations of Western civilization. Much of modern Western politics, artistic thought (architecture, sculpture), scientific thought, theatre, literature and philosophy derives from this period of Greek history.';
+	const classicalGreeceContentString = `
+    <div id="content">
+      <div id="siteNotice">
+      </div>
+      <h1 id="firstHeading" class="firstHeading">${classicalGreeceHeading}</h1>
+      <div id="bodyContent">
+        <p><b>${classicalGreeceHeading} </b>${classicalGreeceContent} </p>
+      </div>
+    </div>
+      `;
+	//creates an infowindow object for text of classical greece
+	const classicalGreeceInfoWindow = new google.maps.InfoWindow({
+		content: classicalGreeceContentString
+	});
+
+	//creates a marker object for classical greece
+	const classicalGreeceMarker = new google.maps.Marker({
+		position: classicalGreece,
+		map: classicalMap,
+		title: classicalGreeceHeading
+	});
+
+	//adds a click event to the classical greece info window, FAILED W/ JQUERY
+	classicalGreeceMarker.addListener('click', function() {
+		classicalGreeceInfoWindow.open(classicalMap, classicalGreeceMarker);
+	});
+
+	//-----CLASSICAL ROME INFO WINDOW-----
+
+	// creates a variable for classical rome info window, where I want it on the map
+	const classicalRome = { lat: 50, lng: 8 };
+	//creates content for the info window
+	const classicalRomeHeading = 'Classical Rome';
+	//MAYBE FIND AN EASIER WAY TO PUT IN CONTENT?
+	const classicalRomeContent =
+		'is Roman civilization from the founding of the Italian city of Rome in the 8th century BC to the collapse of the Western Roman Empire in the 5th century AD, encompassing the Roman Kingdom (753 BC–509 BC), Roman Republic (509 BC–27 BC) and Roman Empire (27 BC–476 AD) until the fall of the western empire.';
+	const classicalRomeContentString = `
+    <div id="content">
+      <div id="siteNotice">
+      </div>
+      <h1 id="firstHeading" class="firstHeading">${classicalRomeHeading}</h1>
+      <div id="bodyContent">
+        <p><b>${classicalRomeHeading} </b>${classicalRomeContent} </p>
+      </div>
+    </div>
+      `;
+	//creates an infowindow object for text of classical rome
+	const classicalRomeInfoWindow = new google.maps.InfoWindow({
+		content: classicalRomeContentString
+	});
+
+	//creates a marker object for classical rome
+	const classicalRomeMarker = new google.maps.Marker({
+		position: classicalRome,
+		map: classicalMap,
+		title: classicalRomeHeading
+	});
+
+	//adds a click event to the classical rome info window, FAILED W/ JQUERY
+	classicalRomeMarker.addListener('click', function() {
+		classicalRomeInfoWindow.open(classicalMap, classicalRomeMarker);
+	});
+
+	//-----CLASSICAL PERSIA INFO WINDOW-----
+
+	// creates a variable for classical persia info window, where I want it on the map
+	const classicalPersia = { lat: 35, lng: 50 };
+	//creates content for the info window
+	const classicalPersiaHeading = 'Classical Persia';
+	//MAYBE FIND AN EASIER WAY TO PUT IN CONTENT?
+	const classicalPersiaContent =
+		" was the most dominant empire on earth. To this day, (as a % of earth's population) the Persian Empire was the largest in history. The Persian Empires emerged in Southwest Asia (Middle East).";
+	const classicalPersiaContentString = `
+    <div id="content">
+      <div id="siteNotice">
+      </div>
+      <h1 id="firstHeading" class="firstHeading">${classicalPersiaHeading}</h1>
+      <div id="bodyContent">
+        <p><b>${classicalPersiaHeading} </b>${classicalPersiaContent} </p>
+      </div>
+    </div>
+      `;
+	//creates an infowindow object for text of classical persia
+	const classicalPersiaInfoWindow = new google.maps.InfoWindow({
+		content: classicalPersiaContentString
+	});
+
+	//creates a marker object for classical persia
+	const classicalPersiaMarker = new google.maps.Marker({
+		position: classicalPersia,
+		map: classicalMap,
+		title: classicalPersiaHeading
+	});
+
+	//adds a click event to the classical persia info window, FAILED W/ JQUERY
+	classicalPersiaMarker.addListener('click', function() {
+		classicalPersiaInfoWindow.open(classicalMap, classicalPersiaMarker);
+	});
+
+	//-----MAYA INFO WINDOW-----
+
+	// creates a variable for the maya info window, where I want it on the map
+	const maya = { lat: 15, lng: -93 };
+	//creates content for the info window
+	const mayaHeading = 'Maya';
+	//MAYBE FIND AN EASIER WAY TO PUT IN CONTENT?
+	const mayaContent = ' This is where the Maya goes';
+	const mayaContentString = `
+    <div id="content">
+      <div id="siteNotice">
+      </div>
+      <h1 id="firstHeading" class="firstHeading">${mayaHeading}</h1>
+      <div id="bodyContent">
+        <p><b>${mayaHeading} </b>${mayaContent} </p>
+      </div>
+    </div>
+      `;
+	//creates an infowindow object for text of maya
+	const mayaInfoWindow = new google.maps.InfoWindow({
+		content: mayaContentString
+	});
+
+	//creates a marker object for maya
+	const mayaMarker = new google.maps.Marker({
+		position: maya,
+		map: americasMap,
+		title: mayaHeading
+	});
+
+	//adds a click event to the maya info window, FAILED W/ JQUERY
+	mayaMarker.addListener('click', function() {
+		mayaInfoWindow.open(americasMap, mayaMarker);
+	});
+
+	//-----AZTEC INFO WINDOW-----
+
+	// creates a variable for the aztec info window, where I want it on the map
+	const aztec = { lat: 19, lng: -103 };
+	//creates content for the info window
+	const aztecHeading = 'Aztec';
+	//MAYBE FIND AN EASIER WAY TO PUT IN CONTENT?
+	const aztecContent = ' This is where the Aztec goes';
+	const aztecContentString = `
+    <div id="content">
+      <div id="siteNotice">
+      </div>
+      <h1 id="firstHeading" class="firstHeading">${aztecHeading}</h1>
+      <div id="bodyContent">
+        <p><b>${aztecHeading} </b>${aztecContent} </p>
+      </div>
+    </div>
+      `;
+	//creates an infowindow object for text of the aztec
+	const aztecInfoWindow = new google.maps.InfoWindow({
+		content: aztecContentString
+	});
+
+	//creates a marker object for classical persia
+	const aztecMarker = new google.maps.Marker({
+		position: aztec,
+		map: americasMap,
+		title: aztecHeading
+	});
+
+	//adds a click event to the classical persia info window, FAILED W/ JQUERY
+	aztecMarker.addListener('click', function() {
+		aztecInfoWindow.open(americasMap, aztecMarker);
+	});
+
+	//-----INCA INFO WINDOW-----
+
+	// creates a variable for the inca info window, where I want it on the map
+	const inca = { lat: -20, lng: -70 };
+	//creates content for the info window
+	const incaHeading = 'Inca';
+	//MAYBE FIND AN EASIER WAY TO PUT IN CONTENT?
+	const incaContent = ' This is where the Inca goes';
+	const incaContentString = `
+    <div id="content">
+      <div id="siteNotice">
+      </div>
+      <h1 id="firstHeading" class="firstHeading">${incaHeading}</h1>
+      <div id="bodyContent">
+        <p><b>${incaHeading} </b>${incaContent} </p>
+      </div>
+    </div>
+      `;
+	//creates an infowindow object for text of the inca
+	const incaInfoWindow = new google.maps.InfoWindow({
+		content: incaContentString
+	});
+
+	//creates a marker object for the inca
+	const incaMarker = new google.maps.Marker({
+		position: inca,
+		map: americasMap,
+		title: incaHeading
+	});
+
+	//adds a click event to the inca info window, FAILED W/ JQUERY
+	incaMarker.addListener('click', function() {
+		incaInfoWindow.open(americasMap, incaMarker);
 	});
 }
 
