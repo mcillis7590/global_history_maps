@@ -1,0 +1,25 @@
+{
+  "name": "global_history_maps",
+  "version": "1.0.0",
+  "description": "This is my final project for ga_jsd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcillis7590/global_history_maps.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcillis7590/global_history_maps/issues"
+  },
+  "homepage": "https://github.com/mcillis7590/global_history_maps#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
