@@ -949,6 +949,12 @@ function initMaps() {
 }
 
 $(document).ready(function() {
+
+	  //allows hamburger icon to toggle when clicked in mobile
+	  $('.navbar-toggler').click(() => {
+		$('#navbarToggleExternalContent').toggle()
+	  })
+	
 	//navbar search form
 	$('form').submit((event) => {
 		// prevent default behavior of forms
