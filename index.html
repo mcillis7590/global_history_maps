@@ -64,7 +64,11 @@
     <!-- my JS file -->
     <script type="text/javascript" src="./js/app.js"></script>
     <!-- Try to find a way to hide the google api key -->
-    <!-- <script src={`https://${googleScript}} async defer></script> -->
+    <!-- <script 
+    const apiKey = process.env.GOOGLE_API_KEY
+    const googleScript = "maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap"
+    src=`maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap` async defer>
+    </script> -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQ3WNxkaa6G6nRIB0lUqdlp4kQl6TG1FU&callback=initMap"
     async defer></script>
   </body>

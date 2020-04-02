@@ -1,4 +1,4 @@
-const apiKey = process.env.GOOGLE_API_KEY
+// const apiKey = process.env.GOOGLE_API_KEY
 
 function initMaps() {
 	//*****RIVER VALLEY MAP INITIALIZATION*****

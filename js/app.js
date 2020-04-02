@@ -1,4 +1,6 @@
 // BECAUSE THE HTML PAGE LOADS THE GOOGLE MAPS API BEFORE THE JS FILE RUNS, IT DOESN'T RECOGNIZE THE FUNCTION: initMap(). THAT'S WHY IT HAS TO GO BEFORE THE DOC.READY FUNCTION
+// require('dotenv').config()
+
 // const apiKey = process.env.GOOGLE_API_KEY
 // const googleScript = `maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap`
 
