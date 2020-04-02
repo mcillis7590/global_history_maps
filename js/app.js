@@ -50,7 +50,11 @@ function initMap() {
 }
 
 $(document).ready(function(){
-  $('')
+
+  //allows hamburger icon to toggle when clicked in mobile
+  $('.navbar-toggler').click(() => {
+    $('#navbarToggleExternalContent').toggle()
+  })
 
   //google classroom button on HOMEPAGE
   $('#google-classroom-button').click(() => {

@@ -9,9 +9,17 @@
   <body>
     <!-- NAVBAR -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- HELPS TOGGLE BETWEEN ITEMS ON THE NAVBAR -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <a id="index-hamburger-link" class="nav-link" href="index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+          <a id="units-hamburger-link" class="nav-link" href="units.html">Units</a>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- TRIGGERS NAV BAR HAMBURGER ICON-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- REST OF NAVBAR -->
